@@ -1,0 +1,57 @@
+<!--
+Завдання 1. Створити html файл з формою для додавання викладача.
+Форма повинна містити наступні поля:
+    Повне ім’я, стать, дата народження, email, телефон, бажаний колір фону, країна, місто, коментар.
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application form</title>
+</head>
+<body>
+    <form>
+        <h2>This is an application form for teachers. Please input data:</h2>
+        
+        <label for="fname">Full name:</label><br>
+        <input type="text" id="fname" name="fname" placeholder="Name Surname"><br>
+
+
+        <label for="sex">Sex:</label><br>
+        
+        <input type="radio" id="woman" name="sex" value="Woman">
+        <label for="woman">Woman</label><br>
+
+        <input type="radio" id="man" name="sex" value="Man">
+        <label for="man">Man</label><br>
+
+        <input type="radio" id="other" name="sex" value="Other">
+        <label for="other">Other</label><br>
+
+
+        <label for="bday">Birthday:</label><br>
+        <input type="date" id="bday" name="bday"><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br>
+
+        <label for="pnumber">Phone number:</label><br>
+        <input type="tel" id="pnumber" name="pnumber" placeholder="+123 45 678 90 00"><br>
+
+        <label for="bcolor">Desired background color:</label><br>
+        <input type="color" id="bcolor" name="bcolor"><br>
+
+        <label for="country">Country:</label><br>
+        <input type="text" id="country" name="country"><br>
+
+        <label for="city">City:</label><br>
+        <input type="text" id="city" name="city"><br>
+
+        <label for="comment">Comments:</label><br>
+        <textarea id="comment" name="comment" rows="4" cols="50">This application form is very cool!</textarea><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
